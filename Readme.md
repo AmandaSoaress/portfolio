@@ -4,3 +4,6 @@ Este é meu portfólio em desenvolvimento, vou sempre atualizar ele conforme meu
 <br>
 <br>
 ![preview](assets/img/preview.png)
+<br>
+<br>
+![preview](assets/img/preview2.png)
