@@ -17,11 +17,14 @@ h1 {
   font-size: 50px;
   text-transform: uppercase;
   letter-spacing: 4px;
+  margin-left: 112px;
+  margin-top: -40px;
 
 }
 h2 {
   text-transform: uppercase;
   letter-spacing: 4px;
+  margin-left: 205px;
  
 }
 .header-container-index {
@@ -330,7 +333,8 @@ p {
   display: flex;
   justify-content: center;
   align-items: center;
-
+  right: 0px;
+  top: 0px;
 }
 .player-ctrl i {
   font-size: 50px;
@@ -351,5 +355,8 @@ p {
   width: 50px;
   height: 50px;
   cursor: pointer;
+  position: absolute;
+  right: 0;
+  margin-left: 205px;
 }
 
