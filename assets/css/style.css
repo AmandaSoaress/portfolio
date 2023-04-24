@@ -360,4 +360,58 @@ p {
   right: 0;
   margin-left: 205px;
 }
+@media (max-width: 800px) {
+    h1 {
+        font-size: 150%;
+        margin: auto;
+    }
+
+    h2 {
+        font-size: 90%;
+        margin: 1rem;
+    }
+
+    .social-media {
+        margin-top: 0rem;
+        margin-block-end: 1rem;
+        display: flex;
+        flex-direction: column;
+        height: max-content;
+    }
+    
+    .container {
+        margin-top: 0;
+    }
+
+    /* originalmente é row mas estava column daí o texto vinha na frente */
+    .card-container {
+        flex-direction: column-reverse;
+    }
+    
+    /* reverter apenas a coluna do meio que estava invertida para o responsivo Desktop */
+    .container .card-container:nth-child(3){
+        flex-direction: column;
+    } 
+
+    .card {
+        height: 250px;
+        width: 250px;
+        margin-top: 1rem;
+    }
+
+    .card-text {
+        width: 90%;
+        margin-top: 2rem;
+        text-align: justify;
+    }
+
+    .card:hover > .card-wrapper::before {
+        height: 190px;
+        width: 190px;
+    }
+
+    .footer{
+        flex-direction: column;
+    }
+}
 
