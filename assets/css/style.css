@@ -5,10 +5,16 @@ body {
   padding: 0;
   font-family: 'Poppins', sans-serif;
   color: #4f4045;
+  
 }
 a {
   text-decoration: none;
   color: #4f4045;
+  text-shadow: 
+           -1px -1px 0px #FFF, 
+           -1px 1px 0px #FFF,                    
+            1px -1px 0px #FFF,                  
+            1px 0px 0px #FFF;
 }
 a:hover {
   background-color: #dfdfdf;
@@ -20,9 +26,20 @@ h1 {
   margin-left: 70px;
   margin-top:-20px;
   margin-right: 202px;
+  text-shadow: 
+           -1px -1px 0px #FFF, 
+           -1px 1px 0px #FFF,                    
+            1px -1px 0px #FFF,                  
+            1px 0px 0px #FFF;
 
 }
 h2 {
+
+  text-shadow: 
+           -1px -1px 0px #FFF, 
+           -1px 1px 0px #FFF,                    
+            1px -1px 0px #FFF,                  
+            1px 0px 0px #FFF;
   text-transform: uppercase;
   letter-spacing: 4px;
   line-height:2px;
@@ -41,6 +58,11 @@ h2 {
   align-items: flex-start;
   padding: 0 200px;
   position: relative;
+  text-shadow: 
+           -1px -1px 0px #FFF, 
+           -1px 1px 0px #FFF,                    
+            1px -1px 0px #FFF,                  
+            1px 0px 0px #FFF;
 }
 .header-container-sobre {
   background-color: #ffab9b;
@@ -79,6 +101,7 @@ p {
   transition: 0.5s ease-in-out;
 }
 .checkbox-container {
+  
   display: flex;
   justify-content: center;
   align-items: center;
@@ -119,6 +142,7 @@ p {
   display: none;
 }
 .menu {
+
   position: absolute;
   top: 28px;
   right: 30px;
@@ -154,6 +178,7 @@ p {
   text-transform: uppercase;
   letter-spacing: 4px;
   font-size: 40px;
+
 }
 #toggle:checked + .checkbox .trace:nth-child(1) {
   transform: rotate(45deg);
@@ -203,7 +228,6 @@ p {
   align-items: center;
   justify-content: center;
   background-color: #ffab9b;
-  background-image: url('../img/logo.png');
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -413,5 +437,12 @@ p {
     .footer{
         flex-direction: column;
     }
+
+    .img-projeto{
+      height: 200px;
+        width: 200px;
+        margin-top: 1rem;
+    }
+    
 }
 
