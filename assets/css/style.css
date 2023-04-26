@@ -19,8 +19,8 @@ h1 {
   font-size: 50px;
   text-transform: uppercase;
   letter-spacing: 4px;
-  margin-left: 70px;
-  margin-top: -20px;
+  margin-left: -75px;
+  margin-top: -2px;
   margin-right: 202px;
   text-shadow: -1px -1px 0px #fff, -1px 1px 0px #fff, 1px -1px 0px #fff,
     1px 0px 0px #fff;
@@ -61,6 +61,7 @@ h3 {
     1px 0px 0px #fff;
 }
 .header-container-sobre {
+  padding: 40px 10px;
   background-color: #ffab9b;
   background-image: url('');
   background-repeat: no-repeat;
@@ -70,7 +71,6 @@ h3 {
   flex-direction: column;
   justify-content: left;
   align-items: flex-start;
-  padding: 0 10px;
   position: relative;
 }
 p {
@@ -404,7 +404,9 @@ p {
   height: 50px;
   cursor: pointer;
 }
-
+.sobre .fotoSobre img {
+margin-top: 22%;
+}
 @media (max-width: 800px) {
   h1 {
     font-size: 150%;
@@ -478,19 +480,25 @@ p {
     position: inherit;
   }
   .textoSobre {
-    margin-top: 10%;
     margin-left: -31%;
+    font-size: 12px;
   }
   .sobre .fotoSobre img {
-    margin-left: -116%;
+    margin-left: -20%;
     margin-top: 143px;
-    height: 213px;
+    height: 200px;
   }
-  .sobre .fotoSobre figcaption {
-    margin-left: -121%;
+  .sobre  img{
+    height: 137px;
+    margin-top: -7px;
   }
+ 
  .sobre .resumo {
-  padding: 15px;
+  margin-left: 4px;
+  padding: 58px;
+  }
+  .header-container-sobre{
+    padding: 2px 9px;
   }
  
 }
