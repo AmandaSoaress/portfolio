@@ -5,16 +5,12 @@ body {
   padding: 0;
   font-family: 'Poppins', sans-serif;
   color: #4f4045;
-  
 }
 a {
   text-decoration: none;
   color: #4f4045;
-  text-shadow: 
-           -1px -1px 0px #FFF, 
-           -1px 1px 0px #FFF,                    
-            1px -1px 0px #FFF,                  
-            1px 0px 0px #FFF;
+  text-shadow: -1px -1px 0px #fff, -1px 1px 0px #fff, 1px -1px 0px #fff,
+    1px 0px 0px #fff;
 }
 a:hover {
   background-color: #dfdfdf;
@@ -24,37 +20,29 @@ h1 {
   text-transform: uppercase;
   letter-spacing: 4px;
   margin-left: 70px;
-  margin-top:-20px;
+  margin-top: -20px;
   margin-right: 202px;
-  text-shadow: 
-           -1px -1px 0px #FFF, 
-           -1px 1px 0px #FFF,                    
-            1px -1px 0px #FFF,                  
-            1px 0px 0px #FFF;
-
+  text-shadow: -1px -1px 0px #fff, -1px 1px 0px #fff, 1px -1px 0px #fff,
+    1px 0px 0px #fff;
 }
 h2 {
-
-  text-shadow: 
-           -1px -1px 0px #FFF, 
-           -1px 1px 0px #FFF,                    
-            1px -1px 0px #FFF,                  
-            1px 0px 0px #FFF;
+  text-shadow: -1px -1px 0px #fff, -1px 1px 0px #fff, 1px -1px 0px #fff,
+    1px 0px 0px #fff;
   text-transform: uppercase;
   letter-spacing: 4px;
-
-  margin-top:20px; 
+  margin-top: 20px;
 }
-h3{
+h3 {
   text-transform: uppercase;
   letter-spacing: 4px;
-  line-height:2px;
-  margin-top:20px; 
-  text-shadow: 
-  -1px -1px 0px #FFF, 
-  -1px 1px 0px #FFF,                    
-   1px -1px 0px #FFF,                  
-   1px 0px 0px #FFF;
+  line-height: 2px;
+  margin-top: 20px;
+  text-shadow: -1px -1px 0px #fff, -1px 1px 0px #fff, 1px -1px 0px #fff,
+    1px 0px 0px #fff;
+}
+.textoSobre h1 .textoSobre h2 {
+  margin-top: 10%;
+  letter-spacing: 2px;
 }
 .header-container-index {
   height: 100vh;
@@ -69,11 +57,8 @@ h3{
   align-items: flex-start;
   padding: 0 200px;
   position: relative;
-  text-shadow: 
-           -1px -1px 0px #FFF, 
-           -1px 1px 0px #FFF,                    
-            1px -1px 0px #FFF,                  
-            1px 0px 0px #FFF;
+  text-shadow: -1px -1px 0px #fff, -1px 1px 0px #fff, 1px -1px 0px #fff,
+    1px 0px 0px #fff;
 }
 .header-container-sobre {
   background-color: #ffab9b;
@@ -112,7 +97,6 @@ p {
   transition: 0.5s ease-in-out;
 }
 .checkbox-container {
-  
   display: flex;
   justify-content: center;
   align-items: center;
@@ -153,7 +137,6 @@ p {
   display: none;
 }
 .menu {
-
   position: absolute;
   top: 28px;
   right: 30px;
@@ -189,7 +172,6 @@ p {
   text-transform: uppercase;
   letter-spacing: 4px;
   font-size: 40px;
-
 }
 #toggle:checked + .checkbox .trace:nth-child(1) {
   transform: rotate(45deg);
@@ -224,17 +206,17 @@ p {
   margin: 5% 10%;
 }
 .card-container {
-  display: flex;
   justify-content: space-evenly;
   alingn-items: center;
   width: 100%;
   margin: 0 0 40px 0;
 }
 .img-projeto {
-  width: 400px;
-  height: 284px;
+  width: 500px;
+  height: 300px;
+  margin-left: 25%;
   border-radius: 100%;
-  margin-right: 30px;
+  margin-right: 159px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -247,16 +229,43 @@ p {
   cursor: pointer;
   transition: 0.5s ease-in-out;
 }
+.collapsible {
+  background-color: #777;
+  color: white;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+  border-radius: 25px;
+}
+
+.active,
+.collapsible:hover {
+  background-color: #555;
+}
+
+.collapsible:after {
+  content: '\002B';
+  color: white;
+  font-weight: bold;
+  float: right;
+  margin-left: 5px;
+}
+
+.active:after {
+  content: '\2212';
+}
+
 .card-projeto {
-  width: 90%;
+  padding: 0 18px;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
   background-color: #dfdfdf;
-  border-radius: 40px;
-  padding: 20px;
-  font-size: 18px;
-  align-items: center;
-  display: flex;
-  flex-wrap: wrap;
-  align-content: center;
+  border-radius: 25px;
 }
 .card-text {
   width: 40%;
@@ -334,12 +343,16 @@ p {
 
 .sobre .titulo .texto h1 {
   margin-bottom: -25px;
+  position: relative;
+  margin-left: -117px;
+  margin-right: -23%;
+  margin-top: 40px;
 }
-.sobre main {
+.sobre {
   background-color: #ffab9b;
 }
 
-.sobre main .conteudo {
+.sobre .conteudo {
   font-size: 18px;
   margin: 0 90px;
   display: flex;
@@ -349,17 +362,17 @@ p {
   align-content: space-between;
   align-items: stretch;
 }
-.sobre main .foto img {
-  margin: 14px;
-  padding: 13px;
-  height: 500px;
+.sobre .fotoSobre img {
+  margin: 2px;
+  padding: 6px;
+  height: 400px;
 }
-  
-.sobre main .foto figcaption {
+
+.sobre .foto figcaption {
   text-align: center;
 }
 
-.sobre main .resumo {
+.sobre .resumo {
   background-color: #dfdfdf;
   margin: 5px;
   padding: 30px;
@@ -382,7 +395,6 @@ p {
   font-family: sans-serif;
   padding-left: 10px;
   color: #222;
-  
 }
 .player-ctrl a {
   background-color: #fb5f70;
@@ -391,73 +403,94 @@ p {
   width: 50px;
   height: 50px;
   cursor: pointer;
-  position: absolute;
-  right: 0;
-  margin-left: 205px;
 }
 
 @media (max-width: 800px) {
-    h1 {
-        font-size: 150%;
-        margin: auto;
-    }
+  h1 {
+    font-size: 150%;
+    margin: auto;
+  }
 
-    h2 {
-        font-size: 90%;
-        margin: 1rem;
-    }
+  h2 {
+    font-size: 90%;
+    margin: 1rem;
+  }
 
-    .social-media {
-        margin-top: 0rem;
-        margin-block-end: 1rem;
-        display: flex;
-        flex-direction: column;
-        height: max-content;
-    }
-    
-    .container {
-        margin-top: 0;
-    }
+  .social-media {
+    margin-top: 0rem;
+    margin-block-end: 1rem;
+    display: flex;
+    flex-direction: column;
+    height: max-content;
+  }
 
-    /* originalmente é row mas estava column daí o texto vinha na frente */
-    .card-container {
-        flex-direction: column-reverse;
-    }
-    
-    /* reverter apenas a coluna do meio que estava invertida para o responsivo Desktop */
-    .container .card-container:nth-child(3){
-        flex-direction: column;
-    } 
+  .container {
+    margin-top: 0;
+  }
 
-    .card {
-        height: 250px;
-        width: 250px;
-        margin-top: 1rem;
-    }
+  .card-container {
+    flex-direction: column-reverse;
+  }
 
-    .card-text {
-        width: 90%;
-        margin-top: 2rem;
-        text-align: justify;
-    }
+  .container .card-container:nth-child(3) {
+    flex-direction: column;
+  }
 
-    .card:hover > .card-wrapper::before {
-        height: 190px;
-        width: 190px;
-    }
+  .card {
+    height: 250px;
+    width: 250px;
+    margin-top: 1rem;
+  }
 
-    .footer{
-        flex-direction: column;
-    }
+  .card-text {
+    width: 90%;
+    margin-top: 2rem;
+    text-align: justify;
+  }
 
-    .img-projeto{
-      width: 100%;
-      height: 100px;
-        margin-top: 1rem;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
-    
+  .card:hover > .card-wrapper::before {
+    height: 190px;
+    width: 190px;
+  }
+
+  .footer {
+    flex-direction: column;
+    width: 105%;
+  }
+
+  .img-projeto {
+    width: 100%;
+    height: 100px;
+    margin-top: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 0%;
+    margin-right: 0px;
+  }
+  .player-ctrl a {
+    background-color: #fb5f70;
+    border-radius: 10px;
+    padding: 10px;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    position: inherit;
+  }
+  .textoSobre {
+    margin-top: 10%;
+    margin-left: -31%;
+  }
+  .sobre .fotoSobre img {
+    margin-left: -116%;
+    margin-top: 143px;
+    height: 213px;
+  }
+  .sobre .fotoSobre figcaption {
+    margin-left: -121%;
+  }
+ .sobre .resumo {
+  padding: 15px;
+  }
+ 
 }
-
