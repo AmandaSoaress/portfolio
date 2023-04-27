@@ -383,13 +383,15 @@ p {
   justify-content: center;
   right: 0px;
   top: 0px;
-  align-items: end;
+  margin-top: 20px;
+  
 }
 .player-ctrl i {
   font-size: 50px;
   color: white;
   line-height: 50px;
   padding: 14px;
+
   
 }
 .player-ctrl h1 {
@@ -404,6 +406,7 @@ p {
   width: 50px;
   height: 50px;
   cursor: pointer;
+  margin-top: 164px;
   
 }
 .sobre .fotoSobre img {
@@ -480,19 +483,22 @@ margin-top: 22%;
     height: 50px;
     cursor: pointer;
     position: inherit;
+    
   }
   .textoSobre {
-    margin-left: -31%;
-    font-size: 12px;
+    margin-left: -39%;
+    font-size: 16px;
+    margin-top: 141px;
+
   }
   .sobre .fotoSobre img {
-    margin-left: -20%;
-    margin-top: 143px;
+    margin-left: -6%;
+    margin-top: 13px;
     height: 200px;
   }
   .sobre  img{
     height: 137px;
-    margin-top: -7px;
+    margin-top: -59px;
   }
  
  .sobre .resumo {
@@ -501,6 +507,24 @@ margin-top: 22%;
   }
   .header-container-sobre{
     padding: 2px 9px;
+  }
+  .player-ctrl {
+    display: flex;
+    justify-content: center;
+    right: 0px;
+    top: 0px;
+    margin-top: -156px;
+    
+  }
+  .player-ctrl a {
+    background-color: #fb5f70;
+    border-radius: 10px;
+    padding: 10px;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+   
+    
   }
  
 }
