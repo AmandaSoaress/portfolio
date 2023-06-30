@@ -1,39 +1,40 @@
 const projetos = document.querySelector('a[href="#projetos"')
 if (projetos) {
-  projetos.addEventListener('click', function() {
+  projetos.addEventListener('click', function () {
     document.querySelector('body > header > div.header > div > div > label').click()
   })
 }
-  
+
 var podcastAudio = document.getElementById('podcast-audio');
 
 var playBtn = document.getElementById('podcast-play');
 
 var pauseBtn = document.getElementById('podcast-pause');
 
-var playShow = function() {
+var playShow = function () {
   podcastAudio.play();
   playBtn.style.display = "none";
   pauseBtn.style.display = "inline-block";
 };
-var pauseShow = function() {
+var pauseShow = function () {
   podcastAudio.pause();
   playBtn.style.display = "inline-block";
   pauseBtn.style.display = "none";
 };
 
-var coll = document.getElementsByClassName("collapsible");
-var i;
+var cardsProjetos = document.getElementsByClassName("collapsible");
 
-for (i = 0; i < coll.length; i++) {
-  coll[i].addEventListener("click", function() {
-    console.log(coll[i])
+for (let i = 0; i < cardsProjetos.length; i++) {
+  cardsProjetos[i].addEventListener("click", function () {
     this.classList.toggle("active");
-    var content = this.nextElementSibling;
-    if (content.style.maxHeight){
-      content.style.maxHeight = null;
+    const elementoDescricao = this.nextElementSibling;
+    const tamanhoElementoDescricao = elementoDescricao.style.maxHeight
+    const estaAberto = tamanhoElementoDescricao === '' || tamanhoElementoDescricao === '100%'
+
+    if (estaAberto) {
+      elementoDescricao.style.maxHeight = "0px";
     } else {
-      content.style.maxHeight = content.scrollHeight + "px";
-    } 
+      elementoDescricao.style.maxHeight = "100%";
+    }
   });
 }

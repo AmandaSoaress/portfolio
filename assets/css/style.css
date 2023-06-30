@@ -209,7 +209,7 @@ p {
   justify-content: space-evenly;
   alingn-items: center;
   width: 100%;
-  margin: 0 0 40px 0;
+  margin: 0 0 50px 0;
 }
 .img-projeto {
   width: 500px;
@@ -248,7 +248,7 @@ p {
 }
 
 .collapsible:after {
-  content: '\002B';
+  content: '\2212';
   color: white;
   font-weight: bold;
   float: right;
@@ -256,12 +256,12 @@ p {
 }
 
 .active:after {
-  content: '\2212';
+  content: '\002B';
 }
 
 .card-projeto {
+  max-height:100%;
   padding: 0 18px;
-  max-height: 0;
   overflow: hidden;
   transition: max-height 0.2s ease-out;
   background-color: #dfdfdf;
