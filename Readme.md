@@ -4,7 +4,7 @@ Este é meu portfólio em desenvolvimento, vou sempre atualizar ele conforme meu
 <br>
 <br>
 
-![preview](assets/img/previewPagina1.png)
+![preview](assets/img/previewPagina1.png#vitrinedev)
 <br>
 <br>
 
