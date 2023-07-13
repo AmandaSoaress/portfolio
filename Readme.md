@@ -6,9 +6,9 @@ Este é meu portfólio em desenvolvimento, vou sempre atualizar ele conforme meu
 
 | :placard: Vitrine.Dev |     |
 | -------------  | --- |
-| :sparkles: Nome        | **Titulo do meu projeto**
-| :label: Tecnologias | java, html, ruby, c# (tecnologias utilizadas)
-| :rocket: URL         | https://url-deploy.com.br
+| :sparkles: Nome        | **Meu Portifólio**
+| :label: Tecnologias | JavaScript, html, css,  (tecnologias utilizadas)
+| :rocket: URL         | https://amandasoaress.github.io/portfolio
 | :fire: Desafio     | https://url-do-desafio.com.br
 
 <!-- Inserir imagem com a #vitrinedev ao final do link -->
