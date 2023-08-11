@@ -1,9 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter&family=Mochiy+Pop+P+One&family=Poppins:ital,wght@1,200;1,500;1,900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Inter&family=Mochiy+Pop+P+One&family=Poppins:ital,wght@1,200;1,500;1,900&display=swap");
 
 body {
+  background-color: #eee;
   margin: 0;
   padding: 0;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   color: #4f4045;
 }
 a {
@@ -47,7 +48,7 @@ h3 {
 .header-container-index {
   height: 100vh;
   background-color: #ffab9b;
-  background-image: url('../img/capa.png');
+  background-image: url("../img/capa.png");
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
@@ -63,7 +64,7 @@ h3 {
 .header-container-sobre {
   padding: 40px 10px;
   background-color: #ffab9b;
-  background-image: url('');
+  background-image: url("");
   background-repeat: no-repeat;
   background-position: ;
   background-size: contain;
@@ -248,7 +249,7 @@ p {
 }
 
 .collapsible:after {
-  content: '\2212';
+  content: "\2212";
   color: white;
   font-weight: bold;
   float: right;
@@ -256,11 +257,11 @@ p {
 }
 
 .active:after {
-  content: '\002B';
+  content: "\002B";
 }
 
 .card-projeto {
-  max-height:100%;
+  max-height: 100%;
   padding: 0 18px;
   overflow: hidden;
   transition: max-height 0.2s ease-out;
@@ -283,7 +284,7 @@ p {
   position: relative;
 }
 .card-wrapper::before {
-  content: '';
+  content: "";
   position: absolute;
   height: 100px;
   width: 100px;
@@ -384,15 +385,12 @@ p {
   right: 0px;
   top: 0px;
   margin-top: 20px;
-  
 }
 .player-ctrl i {
-  font-size: 50px;
+  font-size: 36px;
   color: white;
-  line-height: 50px;
-  padding: 14px;
-
-  
+  line-height: 20px;
+  padding: 4px;
 }
 .player-ctrl h1 {
   font-family: sans-serif;
@@ -406,13 +404,72 @@ p {
   width: 50px;
   height: 50px;
   cursor: pointer;
-  margin-top: 164px;
-  
+  margin-top: 168px;
 }
 .sobre .fotoSobre img {
-margin-top: 22%;
+  margin-top: 22%;
 }
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+.containeer {
+  padding: 25px 9%;
+  text-align: center;
+  background-color: #dfdfdf;
+}
+.containeer .containeer-image {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  padding: 30px;
+}
+.containeer .containeer-image .imagem {
+  width: 350px;
+  border-radius: 10px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+  background-color: #d5ace7;
+  padding: 15px;
+  animation: fradeIn 0.2s linear;
+  border: 3px solid #4f4045;
+}
+img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  magin-bottom: 10px;
+  border-radius: 10px;
+  border:branco;
+}
+
 @media (max-width: 800px) {
+ 
+  .containeer .containeer-image {
+    height: max-content;
+    margin-top: 0rem;
+    margin-block-end: 1rem;
+    display: flex;
+    flex-direction: column;
+
+  }
+.containeer{
+  height: max-content;
+  margin-top: 0rem;
+  margin-block-end: 1rem;
+  display: flex;
+  containeer 
+  padding: 0px;
+
+}
+
+  @keyframes fadeIn {
+    0% {
+      transform: scale(0.7) translate(-10px);
+      opacity: 0;
+    }
+  }
   h1 {
     font-size: 150%;
     margin: auto;
@@ -465,16 +522,6 @@ margin-top: 22%;
     width: 100%;
   }
 
-  .img-projeto {
-    width: 100%;
-    height: 100px;
-    margin-top: 1rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-left: 0%;
-    margin-right: 0px;
-  }
   .player-ctrl a {
     background-color: #fb5f70;
     border-radius: 10px;
@@ -483,29 +530,27 @@ margin-top: 22%;
     height: 50px;
     cursor: pointer;
     position: inherit;
-    
   }
   .textoSobre {
     margin-left: -39%;
     font-size: 16px;
     margin-top: 141px;
-
   }
   .sobre .fotoSobre img {
     margin-left: -6%;
     margin-top: 13px;
     height: 200px;
   }
-  .sobre  img{
+  .sobre img {
     height: 137px;
     margin-top: -59px;
   }
- 
- .sobre .resumo {
-  margin-left: 4px;
-  padding: 58px;
+
+  .sobre .resumo {
+    margin-left: 4px;
+    padding: 58px;
   }
-  .header-container-sobre{
+  .header-container-sobre {
     padding: 2px 9px;
   }
   .player-ctrl {
@@ -514,7 +559,6 @@ margin-top: 22%;
     right: 0px;
     top: 0px;
     margin-top: -156px;
-    
   }
   .player-ctrl a {
     background-color: #fb5f70;
@@ -523,8 +567,5 @@ margin-top: 22%;
     width: 50px;
     height: 50px;
     cursor: pointer;
-   
-    
   }
- 
 }
