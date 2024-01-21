@@ -1,16 +1,13 @@
+const podcastAudio = document.getElementById('podcast-audio');
 
-var podcastAudio = document.getElementById('podcast-audio');
-var playBtn = document.getElementById('podcast-play');
-var pauseBtn = document.getElementById('podcast-pause');
-
-var playShow = function () {
+const btnPlayMusic = function () {
   podcastAudio.play();
-  playBtn.style.display = "none";
-  pauseBtn.style.display = "inline-block";
+  document.getElementById('podcast-play').style.display = "none";
+  document.getElementById('podcast-pause').style.display = "inline-block";
 };
 
-var pauseShow = function () {
+const btnStopMusic = function () {
   podcastAudio.pause();
-  playBtn.style.display = "inline-block";
-  pauseBtn.style.display = "none";
+  document.getElementById('podcast-play').style.display = "inline-block";
+  document.getElementById('podcast-pause').style.display = "none";
 };
