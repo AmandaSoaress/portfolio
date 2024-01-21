@@ -7,7 +7,7 @@ Este é meu portfólio em desenvolvimento, vou sempre atualizar ele conforme meu
 | :placard: Vitrine.Dev |     |
 | -------------  | --- |
 | :sparkles: Nome        | **Meu Portifólio**
-| :label: Tecnologias | JavaScript, html, css,  (tecnologias utilizadas)
+| :label: Tecnologias | Vue.js, JavaScript, html, css,  (tecnologias utilizadas)
 | :rocket: URL         | https://amandasoaress.github.io/portfolio
 | :fire: Desafio     | 
 

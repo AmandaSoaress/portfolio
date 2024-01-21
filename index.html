@@ -12,189 +12,91 @@
 </head>
 
 <body>
-    <header class="header-container-index">
-        <div class="header">
-            <div class="checkbox-container">
-                <div class="checkbox-wrapper">
-                    <input type="checkbox" id="toggle">
-                    <label class="checkbox" for="toggle">
-                        <div class="trace"></div>
-                        <div class="trace"></div>
-                        <div class="trace"></div>
-                    </label>
-                    <div class="menu"></div>
-                    <nav class="menu-items">
-                        <ul>
-                            <li>
-                                <a href="index.html">Home</a>
-                            </li>
-                            <li>
-                                <a href="sobre.html">Sobre</a>
-                            </li>
-                            <li>
-                                <a href="#projetos">Projetos</a>
-                            </li>
-                        </ul>
-                    </nav>
+    <div id="app">
+        <header class="header-container-index">
+            <div class="header">
+                <div class="checkbox-container">
+                    <div class="checkbox-wrapper">
+                        <input type="checkbox" id="toggle">
+                        <label class="checkbox" for="toggle">
+                            <div class="trace"></div>
+                            <div class="trace"></div>
+                            <div class="trace"></div>
+                        </label>
+                        <div class="menu"></div>
+                        <nav class="menu-items">
+                            <ul>
+                                <li>
+                                    <a href="index.html">Home</a>
+                                </li>
+                                <li>
+                                    <a href="sobre.html">Sobre</a>
+                                </li>
+                                <li>
+                                    <a href="#projetos" @click="fechar_menu">Projetos</a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
                 </div>
             </div>
-        </div>
-        <h1>Amanda Santos</h1>
-        <h2>Front-end developer</h2>
-        <br>
-        <div class="player-ctrl">
-            <a id="podcast-play" onclick="playShow()"><i class="ion-ios-play"></i></a>
-            <a id="podcast-pause" onclick="pauseShow()" style="display:none;"><i class="ion-ios-pause"></i></a>
 
-            <audio id="podcast-audio">
-                <source src="./assets/audio/Ana Vilela - Trem Bala.mp3" type="audio/mp4">
-            </audio>
-        </div>
-        <div class="social-media">
-            <a target="_blank" href="https://www.linkedin.com/in/amanda-santos-912891250/">Linkedin</a>
-            <a target="_blank" href="https://github.com/AmandaSoaress">Github</a>
-        </div>
-    </header>
-    <main>
-        <div class="container">
-            <div class="container-image">
-                <div class="imagem" data-title="NLW eSports > Trilha Explorer ">
-                    <a target="_blank" href="https://amandasoaress.github.io/nlw-esports/"> <img
-                            src="assets/img/preview-1.png " alt=""></a>
-                    <h4>Este projeto construído do evento Next Level Week da Rocketseat.</h4>
-                </div>
+            <h1>Amanda Santos</h1>
+            <h2>Front-end developer</h2>
+            <br>
+            <div class="player-ctrl">
+                <a id="podcast-play" onclick="playShow()"><i class="ion-ios-play"></i></a>
+                <a id="podcast-pause" onclick="pauseShow()" style="display:none;"><i class="ion-ios-pause"></i></a>
 
-                <div class="imagem" data-title="Buscador de Pokémon">
-                    <a target="_blank" href="https://amandasoaress.github.io/Buscador-Pokemon/"> <img
-                            src="assets/img/preview-2.png " alt=""></a>
-                    <h4>Elaborei este projeto por gostar do tema, e ele englobou diversas técnicas, como a interação
-                        do HTML com o JavaScript e a busca por nome e ID em uma API terceira.</h4>
-                </div>
-
-                <div class="imagem" data-title="Ignite - Lab">
-                    <a target="_blank" href="https://amandasoaress.github.io/ignite-lab-design-system/"><img
-                            src="assets/img/preview-3.png " alt=""></a>
-                    <h4>É um projeto desenvolvido durante o ignite Lab 03 - Figma ao React - Maratona da
-                        Rocketseat. Foi ultilizado pacotes como o tailwind css e o storybook.</h4>
-                </div>
-
-                <div class="imagem" data-title="Insígnias da Imersão.dev - Alura">
-                    <a target="_blank" href="https://amandasoaress.github.io/Insignias-da-Imersao.dev/"> <img
-                            src="assets/img/preview-4.png " alt=""></a>
-
-                    <h4>É um projeto desenvolvimento na imersão Alura.Praticando HTML, CSS e Javascript.</h4>
-                </div>
-
-                <div class="imagem" data-title="Robotron-2000 ">
-                    <a target="_blank" href="https://amandasoaress.github.io/robotron-2000/"> <img
-                            src="assets/img/preview-5.png " alt=""></a>
-
-                    <h4>Precisei adicionar peças na engrenagem que compõe um robô
-                        e ver as estatísticas atualizadas dinâmicamente, tudo isso com
-                        JavaScript.</h4>
-                </div>
-
-                <div class="imagem" data-title="Netflix Clone">
-                    <a target="_blank" href="https://amandasoaress.github.io/Clone-pag/">
-                        <img src="assets/img/preview-6.png " alt=""></a>
-                    <h4>Neste projeto repliquei do zero o website do Netflix. Utilizando HTML, CSS e
-                        Javascript.</h4>
-                </div>
-
-                <div class="imagem" data-title=" Alura MIDI">
-                    <a target="_blank" href="https://amandasoaress.github.io/Alura-MIDI/">
-                        <img src="assets/img/preview-7.png " alt=""></a>
-                    <h4>É um instrumento musical de interface digital, onde a cada botão vai
-                        reproduzir
-                        um som do instrumento clicado.</h4>
-                </div>
-
-                <div class="imagem" data-title="Alura-Fone">
-                    <a target="_blank" href="https://amandasoaress.github.io/Alura-Fone/"> <img
-                            src="assets/img/preview-8.png " alt=""></a>
-
-                    <h4>É uma interface de telefone que quando discar um número, ele ficará
-                        gravado automaticamente no input e no
-                        console.</h4>
-                </div>
-
-                <div class="imagem" data-title="Relógio Digital">
-                    <a target="_blank" href="https://amandasoaress.github.io/-relogio-digital/"><img
-                            src="assets/img/preview-9.png " alt=""></a>
-
-                    <h4>Fiz um projeto bem legal é um relógio digital para praticar HTML,
-                        CSS e JAVASCRIPT, de forma dinâmica rápida e prática.</h4>
-                </div>
-
-                <div class="imagem" data-title="Semáforo">
-                    <a target="_blank" href="https://amandasoaress.github.io/semaforo/">
-                        <img src="assets/img/preview-10.png " alt=""></a>
-                    <h4>Ultilizei recursos do javascript como ternário, funções do tipo arrow e funções armazenadas em
-                        objetos
-                        para criar a chamada dinâmica e temporizadores.
-                    </h4>
-                </div>
-
-                <div class="imagem" data-title="Lâmpada">
-                    <a target="_blank" href="https://amandasoaress.github.io/lampada/">
-                        <img src="assets/img/preview-11.png " alt=""></a>
-                    <h4>Projeto em javascript para iniciar a interação com elementos
-                        HTML. Acender, Apagar e Quebrar a Lâmpada</h4>
-                </div>
-
-                <div class="imagem" data-title="Calculadora - IMC">
-                    <a target="_blank" href="https://amandasoaress.github.io/calculadora-imc/">
-                        <img src="assets/img/preview-12.png " alt=""></a>
-                    <h4>Nesse projeto é sobre o IMC: O índice de Massa Corporal (IMC), é uma das
-                        maneiras de saber se o seu peso está adequado à sua
-                        altura. Tutorial por Fernando
-                        Leonid.</h4>
-                    </>
-                </div>
-
-                <div class="imagem" data-title="Books-alura">
-                    <a target="_blank" href="https://amandasoaress.github.io/JavaScript-m-todos-de-array-alura_books/">
-                        <img src="assets/img/preview-13.png " alt=""></a>
-                    <h4>É uma Api de livros, que quando tiver
-                        uma requisição para exibir carrega uma lista de
-                        dados.
-
-                    </h4>
-                </div>
-
-                <div class="imagem" data-title="Slide Show - js">
-                    <a target="_blank" href="https://amandasoaress.github.io/slideShow/">
-                        <img src="assets/img/preview-14.png " alt=""></a>
-                    <h4>Neste projeto criei um slideshow com ações para
-                        retroceder e avanças. Autor : Fernando Leonid.</h4>
-
-                </div>
-
-                <div class="imagem" data-title="Lista de Compras">
-                    <a target="_blank" href="https://amandasoaress.github.io/lista-de-compras/">
-                        <img src="assets/img/preview-15.png " alt=""></a>
-                    <h4>Este projeto consigo anexar
-                        itens na lista de objetos para serem
-                        comprados, possuo a função de edição do mesmo
-                        e exclução.Escola Front-End Alura</h4>
-
-                </div>
-
-                <div class="imagem" data-title="Projeto fokus-Pomodoro">
-                    <a target="_blank" href="https://amandasoaress.github.io/fokus/">
-                        <img src="assets/img/preview-16.png " alt=""></a>
-                    <h4> Com este projeto treinei e aprimorei minhas habilidades em JavaScript e manipulação da DOM, Eventos JavaScript e o LocalStorage para armazenar, recuperar e remover dados.</h4>
-
+                <audio id="podcast-audio">
+                    <source src="./assets/audio/Ana Vilela - Trem Bala.mp3" type="audio/mp4">
+                </audio>
+            </div>
+            <div class="social-media">
+                <a target="_blank" href="https://www.linkedin.com/in/amanda-santos-912891250/">Linkedin</a>
+                <a target="_blank" href="https://github.com/AmandaSoaress">Github</a>
+            </div>
+        </header>
+        <main id="projetos">
+            <div class="container">
+                <div class="container-projetos">
+                    <div v-for="projeto in meus_projetos" class="projeto" :data-title="projeto.nome">
+                        <h4>{{ projeto.nome }}</h4>
+                        <a target="_blank" :href="projeto.link">
+                            <img :src="projeto.imagem" :alt="projeto.nome">
+                        </a>
+                        <span>{{ projeto.descricao }}</span>
+                    </div>
                 </div>
             </div>
-        </div>
-    </main>
+        </main>
 
-    <footer class="footer">
-        Feito por Amanda Soares dos Santos.🤍
-        <br>
-        <script src="./assets/js/scripts.js"></script>
-    </footer>
+    </div>
 </body>
+
+<footer class="footer">
+    Feito por Amanda Soares dos Santos.🤍
+    <br>
+    <script src="./assets/js/musica.js"></script>
+    <script src="./assets/js/meus_projetos.js"></script>
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <script>
+        const {
+            createApp,
+            ref
+        } = Vue
+        createApp({
+            setup() {
+                const fechar_menu = function() {
+                    document.querySelector("#app > header > div.header > div > div > label").click()
+                }
+                return {
+                    meus_projetos,
+                    fechar_menu
+                }
+            }
+        }).mount('#app')
+    </script>
+</footer>
 
 </html>

@@ -255,17 +255,17 @@ h2 {
   text-align: center;
   background-color: #dfdfdf;
 }
-.container .container-image {
+.container .container-projetos {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 20px;
   padding: 30px;
 }
-.container .container-image .imagem {
+.container .container-projetos .projeto {
   height: 472px;
   border-radius: 10px;
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
-  background-color: #d5ace7;
+  background-color: #f3c2b8;
   padding: 15px;
   animation: fradeIn 0.2s linear;
   border: 3px solid #4f4045;
@@ -279,8 +279,17 @@ img {
   border: branco;
 }
 
+@media (min-width: 1000px) {
+  .projeto {
+    font-size: 16px;
+  }
+}
+
 @media (max-width: 800px) {
-  .container .container-image {
+  .projeto {
+    font-size: 14px;
+  }
+  .container .container-projetos {
     height: max-content;
     margin-top: 0rem;
     margin-block-end: 1rem;
