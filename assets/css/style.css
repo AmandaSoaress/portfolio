@@ -262,7 +262,8 @@ h2 {
   padding: 30px;
 }
 .container .container-projetos .projeto {
-  height: 472px;
+  position: relative;
+  height: 100%;
   border-radius: 10px;
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
   background-color: #f3c2b8;
@@ -270,13 +271,36 @@ h2 {
   animation: fradeIn 0.2s linear;
   border: 3px solid #4f4045;
 }
-img {
+
+.container .container-projetos > .projeto:hover  {
+  background-color: #fdac9b;
+}
+
+img.foto-projeto {
   width: 100%;
   height: 250px;
   object-fit: cover;
   magin-bottom: 10px;
   border-radius: 10px;
   border: branco;
+}
+
+.stack {
+  font-size: 12px;
+  color: white;
+  background-color: gray;
+  border-radius: 5px;
+  padding: 10px;
+  margin:5px
+}
+
+.git {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.git img {
+  height: 40px;
 }
 
 @media (min-width: 1000px) {

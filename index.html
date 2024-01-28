@@ -35,6 +35,9 @@
                                 <li>
                                     <a href="#projetos" @click="fechar_menu">Projetos</a>
                                 </li>
+                                <li>
+                                    <a href="https://web.whatsapp.com/send?phone=5511998625256">Contato</a>
+                                </li>
                             </ul>
                         </nav>
                     </div>
@@ -62,10 +65,18 @@
                 <div class="container-projetos">
                     <div v-for="projeto in meus_projetos" class="projeto" :data-title="projeto.nome">
                         <h4>{{ projeto.nome }}</h4>
+                        <br>
                         <a target="_blank" :href="projeto.link">
-                            <img :src="projeto.imagem" :alt="projeto.nome">
+                            <img class="foto-projeto" :src="projeto.imagem" :alt="projeto.nome">
                         </a>
                         <span>{{ projeto.descricao }}</span>
+                        <br>
+                        
+                        <a  class="git" :href="projeto.git" target="_blank">
+                          Veja no  <img src="./assets/img/git.png" alt="github">
+                        </a>
+
+                        <p class="stack">{{projeto.stack}} </p>
                     </div>
                 </div>
             </div>
