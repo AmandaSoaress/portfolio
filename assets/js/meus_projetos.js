@@ -1,4 +1,5 @@
 var meus_projetos = [
+    { nome: "AluraPic VueJS", descricao:"Galeria de imagens com gestão via API e localstorage.", imagem: "assets/img/preview-17.png", link:"https://amandasoaress.github.io/alurapic/", git:"https://github.com/AmandaSoaress/alurapic" , stack:"Vue e JavaScript"},
     { nome: "Projeto fokus-Pomodoro", descricao: "Gerenciador de tarefas com pomodoro.", imagem: "assets/img/preview-16.png", link: "https://amandasoaress.github.io/fokus/", git: "https://github.com/AmandaSoaress/fokus/", stack:"JavaScript, HTML e CSS"},
     { nome: "Books-alura", descricao: "Lista dos melhores livros da Alura via api.", imagem: "assets/img/preview-13.png", link: "https://amandasoaress.github.io/JavaScript-m-todos-de-array-alura_books/",git: "https://github.com/AmandaSoaress/JavaScript-m-todos-de-array-alura_books/",stack:"JavaScript, HTML e CSS" },
     { nome: "Alura MIDI", descricao: "Instrumento musical de interface acessivel.", imagem: "assets/img/preview-7.png", link: "https://amandasoaress.github.io/Alura-MIDI/", git: "https://github.com/AmandaSoaress/Alura-MIDI/", stack:"JavaScript, HTML e CSS"},
